@@ -1,13 +1,10 @@
-﻿using UmbracoDeliveryApiClient.Models;
+﻿using Umbraco.Community.DeliveryApiClient.Net.Models;
 
-namespace UmbracoDeliveryApiClient
+namespace Umbraco.Community.DeliveryApiClient.Net;
+
+public interface IContentProvider
 {
-    public interface IContentProvider
-    {
 
-        public Task<T> GetContentItemAsync<T>(string path) where T : IContent;
-        public Task<ChildrenCollection<T>> GetChildrenAsync<T>(string path) where T : IContent;
-        void RefreshContent(Guid rootId, string pathOrId);
-        void RefreshAll(Guid rootId);
-    }
+    public Task<T> GetContentItemAsync<T>(string path, Guid? rootId = null) where T : IContent;
+    public Task<ChildrenCollection<T>> GetChildrenAsync<T>(string path, Guid? rootId = null) where T : IContent;    
 }

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>Umbraco.Community.DeliveryApiClient.Web</PackageId>		
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>0.1.0-alpha.3</Version>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<IsPackable>true</IsPackable>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Authors>Mario Lopez</Authors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UmbracoDeliveryApiClient\Umbraco.Community.DeliveryApiClient.Net.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update=".\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\README.md</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

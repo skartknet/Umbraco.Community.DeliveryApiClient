@@ -1,12 +1,8 @@
 ﻿
-namespace UmbracoDeliveryApiClient.Models
+namespace Umbraco.Community.DeliveryApiClient.Net.Models;
+
+
+public class BlockList<T> where T : IElement
 {
-
-    public class BlockList<T> where T : IElement
-    {
-        public List<BlockListItem<T>> Items { get; set; } = new List<BlockListItem<T>>();
-    }
-
-
-
+    public List<BlockListItem<T>> Items { get; set; } = new List<BlockListItem<T>>();
 }

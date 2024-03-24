@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoDeliveryApiClient", "UmbracoDeliveryApiClient\UmbracoDeliveryApiClient.csproj", "{9A211AED-305E-4D6E-8C93-75CDAD974D11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.DeliveryApiClient.Net", "UmbracoDeliveryApiClient\Umbraco.Community.DeliveryApiClient.Net.csproj", "{9A211AED-305E-4D6E-8C93-75CDAD974D11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoDeliveryApiClient.Web", "UmbracoDeliveryApiClient.Web\UmbracoDeliveryApiClient.Web.csproj", "{15BB1DB3-AD4B-41D8-8BBB-2850A87D3488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.DeliveryApiClient.Web", "UmbracoDeliveryApiClient.Web\Umbraco.Community.DeliveryApiClient.Web.csproj", "{15BB1DB3-AD4B-41D8-8BBB-2850A87D3488}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryApiClient.Sample.Website", "DeliveryApiClient.Sample.Website\DeliveryApiClient.Sample.Website.csproj", "{D56425E4-AA6A-4499-8954-5359F66368A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FE6D9C88-BC41-43AC-B827-EC044D040C3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{15BB1DB3-AD4B-41D8-8BBB-2850A87D3488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15BB1DB3-AD4B-41D8-8BBB-2850A87D3488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15BB1DB3-AD4B-41D8-8BBB-2850A87D3488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56425E4-AA6A-4499-8954-5359F66368A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56425E4-AA6A-4499-8954-5359F66368A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56425E4-AA6A-4499-8954-5359F66368A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56425E4-AA6A-4499-8954-5359F66368A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE6D9C88-BC41-43AC-B827-EC044D040C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6D9C88-BC41-43AC-B827-EC044D040C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6D9C88-BC41-43AC-B827-EC044D040C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6D9C88-BC41-43AC-B827-EC044D040C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

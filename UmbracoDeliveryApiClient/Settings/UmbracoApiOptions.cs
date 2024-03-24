@@ -1,11 +1,10 @@
-﻿namespace UmbracoDeliveryApiClient.Settings
+﻿namespace Umbraco.Community.DeliveryApiClient.Net.Settings;
+
+public class UmbracoApiOptions
 {
-    public class UmbracoApiOptions
-    {
-        public const string SectionName = "UmbracoApi";
-        public bool Enabled { get; set; }
-        public string ApiKey { get; set; } = string.Empty;
-        public string Domain { get; set; } = string.Empty;
-        public bool EnableCache { get; set; } = true;
-    }
+    public const string SectionName = "UmbracoApi";
+    public bool Enabled { get; set; }
+    public string ApiKey { get; set; } = string.Empty;
+    public string Domain { get; set; } = string.Empty;
+    public bool EnableCache { get; set; } = true;
 }

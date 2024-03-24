@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using UmbracoDeliveryApiClient.Settings;
+using Umbraco.Community.DeliveryApiClient.Net;
+using Umbraco.Community.DeliveryApiClient.Net.Settings;
 
-namespace UmbracoDeliveryApiClient.Web.Extensions
+
+namespace Umbraco.Community.DeliveryApiClient.Web.Extensions
 {
     public static class ServiceCollectionExtensions
     {
